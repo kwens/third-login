@@ -12,10 +12,7 @@ NAVER_USER_URL = "https://openapi.naver.com/v1/nid/me"
 NAVER_VERIFY_TOKEN_URL = "https://openapi.naver.com/v1/nid/verify"
 
 class NaverHelper:
-    # proxies = {
-    #     'https': 'http://proxy.dianchu.cc:7777'
-    # }
-    proxies = JsonConfig.get("PROXIES")
+    proxies = {}
 
     def __init__(self, app_id, app_secret, proxy=False):
         self.app_id = app_id
@@ -44,8 +41,8 @@ class NaverHelper:
         :param state:
         :return:
         {
-            "access_token": "AAAAQosjWDJieBiQZc3to9YQp6HDLvrmyKC+6+iZ3gq7qrkqf50ljZC+Lgoqrg",
-            "refresh_token": "c8ceMEJisO4Se7uGisHoX0f5JEii7JnipglQipkOn5Zp3tyP7dHQoP0zNKHUq2gY",
+            "access_token": "123+6+iZ3gq7qrkqf50ljZC+Lgoqrg",
+            "refresh_token": "123sdfscfv",
             "token_type": "bearer",
             "expires_in": "3600"
         }
