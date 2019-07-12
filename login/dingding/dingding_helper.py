@@ -4,10 +4,6 @@ import json
 import requests
 
 
-# CorpId = 'ding9385b4aebd9af88635c2f4657eb6378f'
-# CorpSecret = 'nXEzyC_QQtuvlcoRPMJUBvSeBHrPhRf2C2V07fYlQy3v3ryBA21W5GghDPlVadvZ'
-
-
 class DingDingApi(object):
     def __init__(self, corp_id: str = '', corp_secret: str = ''):
         self.corp_id = corp_id
