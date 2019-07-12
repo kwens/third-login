@@ -12,11 +12,7 @@ from config import JsonConfig
 
 
 class FacebookHelper:
-    # proxies = {
-    #     'http': 'http://proxy.dianchu.cc:7777',
-    #     'https': 'http://proxy.dianchu.cc:7777'
-    # }
-    proxies = JsonConfig.get("PROXIES")
+    proxies = {}
 
     def __init__(self, app_id, app_secret, proxy=False):
         # self._redirect_uri = redirect_uri
@@ -61,7 +57,7 @@ class FacebookHelper:
         根据code获取token
         resp
         {
-            "access_token":"EAAEz8gvUKRwBAEIxfaGUY7LNfpTNmNydTZC5OvAFAn8BFgc670M5P6kkgVV0ZCnsOHRvpJM3QjZCf59EQrZA74gqayN70fMblOgDA8TRD2Pv2WD8LLVRNIldL33hbO4zKu20vVzO6SX2s1dXkCsVOymZCoyJbh2dLewBbTOkoJ7IykSyBvGXJ",
+            "access_token":"sdfgdfhdthdfhgdfgdfg",
             "token_type":"bearer",
             "expires_in":5177521
         }
@@ -81,7 +77,7 @@ class FacebookHelper:
         获取长效token
         resp
         {
-            "access_token":"EAAEz8gvUKRwBAEIxfaGUY7LNfpTNmNydTZC5OvAFAn8BFgc670M5P6kkgVV0ZCnsOHRvpJM3QjZCf59EQrZA74gqayN70fMblOgDA8TRD2Pv2WD8LLVRNIldL33hbO4zKu20vVzO6SX2s1dXkCsVOymZCoyJbh2dLewBbTOkoJ7IykSyBvGXJ",
+            "access_token":"12scgfsfgdgrvdrndryjrt",
             "token_type":"bearer",
             "expires_in":5177521
         }
@@ -103,7 +99,7 @@ class FacebookHelper:
             "data":{
                 "app_id":"338589650266396",
                 "type":"USER",
-                "application":"lzq demo app",
+                "application":"demo app",
                 "data_access_expires_at":1551778257,
                 "expires_at":1549180205,
                 "is_valid":true,
@@ -113,7 +109,7 @@ class FacebookHelper:
                     "email",
                     "public_profile"
                 ],
-                "user_id":"104339967271939"
+                "user_id":"23123123123"
             }
         }
         :return:
