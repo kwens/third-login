@@ -141,7 +141,7 @@ class TwitterHelper:
         :return:
         """
         try:
-            proxies = {'https': 'http://proxy.dianchu.cc:7777'} if self.proxy else {}
+            proxies = {}
             data = ''
             if kwargs:
                 data = urlencode(kwargs)
